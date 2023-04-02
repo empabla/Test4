@@ -1,0 +1,38 @@
+Zadanie 1
+Stworz klase MinMax<T extends Comparable> ktora jako pola klasy pobiera instancje T max oraz T min
+Nastepnie stworz klase MinMaxService ktora bedzie miala statyczna metode MinMax<cos tutaj>
+getMinAndMax(List<cos tutaj> elements) zadaniem tej metody jest zwracanie mina i maxa z listy w tym jednym obiekcie
+wg naturalnego porządku jaki gwarantuje komparator, klasa MinMax powinna byc generyczna i metody getMin oraz getMax
+powinny zwracać instancje tego co bedzie na liscie elements, czyli jak przekazemy liste stringow to getMax ma zwraca
+String, getMin tez stringa a jak damy liste osob to ma getMax zwraca osobe, itp itd.
+
+Zadanie 2
+Wykorzystując optional:
+- zapytaj użytkownika o jego imie, jeśli imie będzie podane to wypisz długość imienia, jeśli nie to wypisz 0.
+- zapytaj użytkownika o pesel, jeśli będzie podany poprawny pesel (11 zankow powiedzmy wiekszej walidacji nie ma co
+robic, no i nie null i nie pusty) to bierzemy date urodzenia z tego numeru, w przeciwnym przypadku rzucamy wyjatkiem
+InvlaidPeselException
+
+Zadanie 3
+Wykorzystując optionale i streamy:
+- napisz metode ktora jako argument pobiera liste integerow a jako wynik zwraca 5 najwkeiszych elementow na liscie,
+lub pustą listę jeśli z jakiegokolwiek powodu nie da rady znaleźć 5 najwiekszych elementow
+
+Zadanie 4
+Stworz sobie klase Osoba (imie, nazwisko, miasto, wiek)
+- metoda co zwraca najstarsza kobiete (imie konczy sie na 'a') - lub NoWomenException jesli brak kobiet na liscie
+- metode ktora zwraca sredni wiek wszystkich osob
+- metode ktora zwraca sredni wiek mezczyzn
+- metode ktora zwrca sredni wiek kobiet
+- metode ktora agreguje dwie metody powyzej (tzn: jako drugi parametr przyjmuje funkcje ktora okresla plec)
+- metode ktora znajdze miasto w ktorym zyje najwiecej ludzi
+- metode ktora zwroci wszystkie rozne miasta z listy osob (rozne tzn: bez powtorzen)
+
+Zadanie 5
+Poproś program aby zapytal Cię o datę Twojego urodzenia
+- jeśli podałeś datę późniejszą niż dziś to niech program rzuci błędem: InvalidBirthDateException
+- program wypisuje ile dni żyjesz już
+- program wypisuje ile już miesiecy żyjesz
+- program wypisuje już ile lat żyjesz
+- program wypisuje w który dzień tygodnia się urodziłeś
+- wypisz najbliższy piątek 13ego który wystąpił PO twoich urodzinach.
